@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edwards Clothing</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: rgb(243, 239, 239);
+      }
+
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: white;
+        color: white;
+        font-size: large;
+      }
+
+      .logo {
+        height: 40px;
+        width: auto;
+        cursor: pointer;
+        object-fit: cover;
+      }
+
+      .nav-menu {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .nav-menu li {
+        margin: 0 15px;
+        color: black;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      .subnav {
+        background-color: rgb(243, 239, 239);
+        text-align: center;
+        height: 30px;
+        line-height: .5;
+      }
+
+      .FrontImage {
+        width: 1903px;
+      }
+
+      .grid-container,
+      .grid-container2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        width: 97.8%;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .grid-container2 {
+        background-color: white;
+      }
+
+      .grid-item {
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        font-size: 18px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+        overflow: hidden;
+      }
+
+      .grid-item img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .grid-item2 {
+        font-size: 16px;
+        text-align: center;
+        padding: 10px;
+        background-color: rgb(243, 239, 239);
+        border-radius: 5px;
+        height: 200px;
+      }
+
+      .grid-item3 {
+        font-size: 16px;
+        text-align: center;
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        height: 200px;
+      }
+
+      .NewReleasesFrontImage {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        width: 100%;
+      }
+
+      .main-text {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        left: 10%;
+        width: 40%;
+        max-width: 600px;
+        font-size: x-large;
+      }
+
+      .main-text h2 {
+        font-size: 36px;
+        margin: 10px 0;
+      }
+
+      .main-text p {
+        font-size: 18px;
+        margin: 10px 0;
+        line-height: 1.5;
+        word-wrap: break-word;
+      }
+
+      .main-text button {
+        margin-top: 10px;
+      }
+
+      .BuyNowButton {
+        height: 50px;
+        width: 200px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        background-color: rgb(0, 255, 0);
+        border: 1px solid rgb(0, 255, 0);
+        color: white;
+        font-size: large;
+      }
+
+      .RedColorText {
+        color: red;
+      }
+
+      .GreenColorText {
+        color: rgb(0, 255, 0);
+      }
+
+      .NewReleasedFrontProducts {
+        background-color: rgb(243, 239, 239);
+      }
+
+      .TopSellersProductsHeader,
+      .NewReleasedProductsHeader {
+        text-decoration: underline;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        font-size: xx-large;
+      }
+
+      .TopSellersFrontProducts {
+        background-color: white;
+      }
+
+      h3 {
+        font-size: x-large;
+      }
+
+      .ShopNewButton {
+        height: 50px;
+        width: 200px;
+        margin-bottom: 10px;
+        border-radius: 80px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(255, 255, 255);
+        color: black;
+        font-size: large;
+        cursor: pointer;
+      }
+
+      .newrelesesheader {
+        text-decoration: underline;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <img
+        class="logo"
+        src="Images/EdwardsClothing Logo.png"
+        alt="Edwards Clothing Logo"
+      />
+      <ul class="nav-menu">
+        <li><strong>Mens</strong></li>
+        <li><strong>Womens</strong></li>
+        <li><strong>Kids</strong></li>
+      </ul>
+      <img
+        class="logo"
+        src="Images/ShoppingCart.png"
+        alt="Shopping Cart Logo"
+      />
+    </nav>
+
+    <div class="subnav">
+      <h2>NEW ARRIVALS!</h2>
+    </div>
+
+    <main class="NewReleasesFrontImage">
+      <img
+        class="FrontImage"
+        src="Images/Screen.png"
+        alt="EdwardsClothingNewReleased"
+      />
+      <div class="main-text">
+        <h2 class="newrelesesheader"><strong>NEW RELEASES</strong></h2>
+        <p>
+          Check out our newly released, featuring unique designs, all crafted
+          with quality materials to suit you.
+        </p>
+
+        <a href="#new-releases">
+          <button class="ShopNewButton"><strong>Shop New</strong></button>
+        </a>
+      </div>
+    </main>
+
+    <section class="NewReleasedFrontProducts" id="new-releases">
+      <h2 class="NewReleasedProductsHeader">NEW RELEASES</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img
+            class="EdwardHatNewReleased"
+            src="Images/EdwardChristmasHat.png"
+            alt="EdwardChristmasHat"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            class="EdwardsHoodieNewReleased"
+            src="Images/EdwardsHoodie.png"
+            alt="EdwardsHoodie"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            class="EdwardsShirtNewReleased"
+            src="Images/EdwardsShirt.png"
+            alt="EdwardsShirt"
+          />
+        </div>
+
+        <div class="grid-item2">
+          <h3>Edwards Christmas Hat</h3>
+          <p><strong>
+            WAS <span class="RedColorText">£999.99 </span>NOW
+            <span class="GreenColorText">£799.99!</span></strong>
+          </p>
+          <button class="BuyNowButton"><strong>Buy now</strong></button>
+        </div>
+        <div class="grid-item2">
+          <h3>Edwards Hoodie</h3>
+          <p><strong>
+            WAS <span class="RedColorText">£78.99 </span>NOW
+            <span class="GreenColorText">£59.99!</span></strong>
+          </p>
+          <button class="BuyNowButton"><strong>Buy now</strong></button>
+        </div>
+        <div class="grid-item2">
+          <h3>Edwards Shirt (Worn)</h3>
+          <p><strong>
+            WAS <span class="RedColorText">£58.99 </span>NOW
+            <span class="GreenColorText">£39.99!</span></strong>
+          </p>
+          <button class="BuyNowButton"><strong>Buy now</strong></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="TopSellersFrontProducts">
+      <h2 class="TopSellersProductsHeader"><strong>TOP SELLERS</strong></h2>
+      <div class="grid-container2">
+        <div class="grid-item">
+          <img
+            class="CanO'JackTopSeller"
+            src="Images/CanO_Jack.png"
+            alt="CanO'Jack"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            class="WineO'JackTopSeller"
+            src="Images/WineO_Jack.png"
+            alt="WineO'Jack"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            class="BallO'JackTopSeller"
+            src="Images/BallO_Jack.png"
+            alt="BallO'Jack"
+          />
+        </div>
+
+        <div class="grid-item3">
+          <h3>CanO'Jack</h3>
+          <p><strong>
+            WAS <span class="RedColorText">£5 </span>NOW
+            <span class="GreenColorText">£999.99!</span></strong>
+          </p>
+          <button class="BuyNowButton"><strong>Buy now</strong></button>
+        </div>
+        <div class="grid-item3">
+          <h3>WineO'Jack</h3>
+          <p><strong>
+            WAS <span class="RedColorText">£28.99 </span>NOW
+            <span class="GreenColorText">£89.99!</span></strong>
+          </p>
+          <button class="BuyNowButton"><strong>Buy now</strong></button>
+        </div>
+        <div class="grid-item3">
+          <h3>BallO'Jack</h3>
+          <p><strong>
+            WAS <span class="RedColorText">£0.99 </span>NOW
+            <span class="GreenColorText">£19.21!</span></strong>
+          </p>
+          <button class="BuyNowButton"><strong>Buy now</strong></button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
